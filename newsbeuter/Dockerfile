@@ -1,7 +1,7 @@
-# Run Mutt from a container
+# Run newsbeuter from a container
 #
 # docker run -it \
-#	-v $(pwd)/config:/home/user/.newsbeuter \
+#	-v newsb_vol:/home/user/.newsbeuter \
 #	--name newsb \
 #	ryan/newsbeuter
 
