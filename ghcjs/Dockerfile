@@ -18,13 +18,13 @@ RUN cabal update && \
     cabal install cabal-install Cabal && \
     echo $PATH && which cabal && cabal --version
 
-RUN mkdir /home/user/app && \
-    cd /home/user/app && \
+RUN mkdir /home/user/ghcjs && \
+    cd /home/user/ghcjs && \
     git clone https://github.com/ghcjs/ghcjs-prim.git && \
     git clone https://github.com/ghcjs/ghcjs.git && \
     cabal install --reorder-goals --max-backjumps=-1 ./ghcjs ./ghcjs-prim
 
 RUN which ghcjs-pkg
 
-RUN ghcjs-boot --with-node nodejs --dev
+RUN ghcjs-boot --dev
 ENTRYPOINT ["ghcjs"]
