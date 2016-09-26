@@ -26,5 +26,5 @@ RUN mkdir /home/user/ghcjs && \
 
 RUN which ghcjs-pkg
 
-RUN ghcjs-boot --dev
+RUN ghcjs-boot --with-node nodejs --dev
 ENTRYPOINT ["ghcjs"]
