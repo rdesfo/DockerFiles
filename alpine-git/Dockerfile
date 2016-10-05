@@ -1,5 +1,5 @@
 
-FROM rdesfo/alpine-bash
+FROM rdesfo/alpine-bash:latest
 MAINTAINER Ryan Desfosses <ryan@desfo.org>
 
 USER root
