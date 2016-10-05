@@ -1,5 +1,5 @@
 
-FROM alpine:3.3
+FROM alpine:latest
 MAINTAINER Ryan Desfosses <ryan@desfo.org>
 
 USER root
