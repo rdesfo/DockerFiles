@@ -18,6 +18,7 @@ RUN apt-get update \
        python \
        xdg-utils \
        ca-certificates \
+       libxss1 \
        --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && ln -s $(which nodejs) /usr/bin/node
