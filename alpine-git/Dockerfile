@@ -7,6 +7,7 @@ USER root
 RUN apk add --update \
       git \
       git-bash-completion \
+      git-perl \
     && rm -fr /var/cache/apk/*
 
 USER user
