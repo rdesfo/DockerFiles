@@ -13,4 +13,6 @@ RUN apk add --update \
 USER user
 WORKDIR /home/user
 
+RUN mkdir /home/user/app
+
 ENTRYPOINT ["bash"]

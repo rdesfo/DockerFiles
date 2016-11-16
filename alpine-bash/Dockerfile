@@ -1,5 +1,5 @@
 
-FROM alpine:latest
+FROM alpine:3.3
 MAINTAINER Ryan Desfosses <ryan@desfo.org>
 
 USER root
@@ -20,9 +20,10 @@ RUN apk add --update \
 RUN addgroup -g 1000 user \
     && adduser -D -G user -u 1000 user
 
+COPY bashrc /home/user/.bashrc
+RUN chown -R user:user /home/user
+
 USER user
 WORKDIR /home/user
-
-COPY bashrc /home/user/.bashrc
 
 ENTRYPOINT ["bash"]
