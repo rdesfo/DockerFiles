@@ -3,6 +3,7 @@ MAINTAINER Ryan Desfosses <ryan@desfo.org>
 
 RUN apt-get update \
     && apt-get install -y \
+        gnupg2 \
         thunderbird \
         libcanberra-gtk-module \
         --no-install-recommends \ 
