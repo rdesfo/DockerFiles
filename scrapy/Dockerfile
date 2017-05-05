@@ -1,5 +1,5 @@
-FROM python:2.7.11
-MAINTAINER Ryan Desfosses <ryan@desfo.org>
+FROM python:3.6.0
+LABEL maintainer "Ryan Desfosses <ryan@desfo.org>"
 
 RUN pip install --upgrade pip
 

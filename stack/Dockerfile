@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Ryan Desfosses <ryan@desfo.org>
+LABEL maintainer "Ryan Desfosses <ryan@desfo.org>"
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 575159689BEFB442 \
     && echo 'deb http://download.fpcomplete.com/ubuntu xenial main' | tee /etc/apt/sources.list.d/fpco.list

@@ -1,5 +1,5 @@
-FROM ubuntu:16.04
-MAINTAINER Ryan Desfosses <ryan@desfo.org>
+FROM ubuntu:14.04
+LABEL maintainer "Ryan Desfosses <ryan@desfo.org>"
 
 RUN apt-get update \
     && apt-get install -y \

@@ -1,6 +1,6 @@
 
 FROM rdesfo/stack
-MAINTAINER Ryan Desfosses <ryan@desfo.org>
+LABEL maintainer "Ryan Desfosses <ryan@desfo.org>"
 
 USER root
 

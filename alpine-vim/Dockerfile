@@ -1,6 +1,6 @@
 
 FROM alpine:3.5
-MAINTAINER Ryan Desfosses <ryan@desfo.org>
+LABEL maintainer "Ryan Desfosses <ryan@desfo.org>"
 
 USER root
 
