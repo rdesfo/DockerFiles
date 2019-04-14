@@ -16,5 +16,5 @@ build:
     paths:
       - public
   script:
-  - for i in $(ls);do docker build -t registry.gitlab.com/rdes/$i:latest .; done
-  - for i in $(ls);do docker push registry.gitlab.com/rdes/$i:latest; done
+    - for i in $(ls);do docker build -t registry.gitlab.com/rdes/$i:latest $i; done
+    - for i in $(ls);do docker push registry.gitlab.com/rdes/$i:latest; done
